@@ -9,8 +9,6 @@ const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 });
 app.get('/', async (req, res) => {
-  res.status(200).send({
-  })
 })
 const openai = new OpenAIApi(configuration);
 
