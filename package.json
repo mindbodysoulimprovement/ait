@@ -6,6 +6,12 @@
         "start": "npm run server",
         "install-client": "cd client && npm install && npm run build && cd ..",
         "install-server": "cd server && npm install && cd .. ",
-        "heroku-postbuild": "npm run install-client && npm run install-server"
+        "heroku-postbuild": "npm run install-client && npm run install-server",
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "devDependencies": {
+      "vite": "^4.0.0"
     }
 }
