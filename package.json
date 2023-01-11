@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "main": "",
     "scripts": {
-        "start": "node server.js",
-        "install-client": "cd client && npm install && npm run production && cd ..",
+        "start": "npm run server",
+        "install-client": "cd client && npm install && npm run dev && cd ..",
         "install-server": "cd server && npm install && cd .. ",
         "heroku-postbuild": "npm run install-client && npm run install-server"
     }
