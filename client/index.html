@@ -85,7 +85,7 @@
           <h2>About Us</h2>
           <h4>Are you tired of generic workout and diet plans that don't work for your specific needs? Introducing our AI Personalized Workout and Diet Plans, tailored to your body type, fitness level, and personal goals. Our state-of-the-art technology analyzes your unique characteristics and creates a customized plan that's optimized for maximum results.
 
-            Our plans are between 5000 - 7500 words, providing in-depth information and guidance for every aspect of your fitness journey. From strength training to cardio, our plans cover everything you need to know to transform your body and mind. Here at aitrainer.co, we harness state-of-the-art Artifical Intelligence trained on vast amounts of written fitness text to produce easy to understand, implement and use workout and diet plans, to help you achieve your dream body and fitness goals right now! </h4>
+            Our plans are between  1500 words, providing in-depth information and guidance for every aspect of your fitness journey. From strength training to cardio, our plans cover everything you need to know to transform your body and mind. Here at aitrainer.co, we harness state-of-the-art Artifical Intelligence trained on vast amounts of written fitness text to produce easy to understand, implement and use workout and diet plans, to help you achieve your dream body and fitness goals right now! </h4>
         </div>
       </div>
     </section><!-- End About Us Section -->
@@ -362,7 +362,7 @@ const handleSubmit = async (e) => {
     const gla = data.get('gla');
     const days = data.get('days');
     const cardio = data.get('cardio');
-    const prompt =`Writing a detailed 2700 word workout plan for an individual who is ${height} cm, ${weight} kg,${bf} percentage bodyfat ${gl} ${gla} kg. Include how to lose 1kg a week. The plan should include training 7 days a week. Incorporate ${cardio} cardio. please include sets and reps for exercises for each day. Include how many calories I should eat a day including marconutrient split and meal plan for a week. Also explain progressive overload.`;
+    const prompt =`Writing a detailed 1500 word workout plan for an individual who is ${height} cm, ${weight} kg,${bf} percentage bodyfat ${gl} ${gla} kg. Include how to lose 1kg a week. The plan should include training 7 days a week. Incorporate ${cardio} cardio. please include sets and reps for exercises for each day. Include how many calories I should eat a day including marconutrient split and meal plan for a week. Also explain progressive overload.`;
      // user's chatstripe
     chatContainer.innerHTML += chatStripe(false, prompt)
     
