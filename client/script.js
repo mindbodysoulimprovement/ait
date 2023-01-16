@@ -75,7 +75,7 @@ const handleSubmit = async (e) => {
     const gla = data.get('gla');
     const days = data.get('days');
     const cardio = data.get('cardio');
-    const prompt =`Writing a detailed 1500 word workout plan for an individual who is ${height} cm, ${weight} kg,${bf} percentage bodyfat ${gl} ${gla} kg. Include how to lose 1kg a week. The plan should include training 7 days a week. Incorporate ${cardio} cardio. please include sets and reps for exercises for each day. Include how many calories I should eat a day including marconutrient split and meal plan for a week. Also explain progressive overload.`;
+    const prompt =`Writing a detailed 2700 word workout plan for an individual who is ${height} cm, ${weight} kg,${bf} percentage bodyfat ${gl} ${gla} kg. Include how to lose 1kg a week. The plan should include training 7 days a week. Incorporate ${cardio} cardio. please include sets and reps for exercises for each day. Include how many calories I should eat a day including marconutrient split and meal plan for a week. Also explain progressive overload.`;
      // user's chatstripe
     chatContainer.innerHTML += chatStripe(false, prompt)
     
