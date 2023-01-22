@@ -75,9 +75,10 @@ const handleSubmit = async (e) => {
     const gla = data.get('gla');
     const days = data.get('days');
     const cardio = data.get('cardio');
+    const reply = `Please wait while we create your personalized workout and diet plan. Thank you.`
     const prompt =`Writing a detailed workout plan for an individual who is ${height} cm, ${weight} kg,${bf} percentage bodyfat ${gl} ${gla} kg. Include how to ${gl} 1kg a week. The plan should include training ${days} days a week. Incorporate ${cardio} cardio. please include sets and reps for exercises for each day. Include how many calories I should eat a day including marconutrient split and meal plan for a week. Also explain progressive overload.`;
      // user's chatstripe
-    chatContainer.innerHTML += chatStripe(false, "Please wait while we create your personalized workout and diet plan. Thank you.")
+    chatContainer.innerHTML += chatStripe(false,reply)
     
     // to clear the textarea input 
     form.reset()
