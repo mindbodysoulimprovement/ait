@@ -27,12 +27,12 @@ app.post('/', async (req, res) => {
       prompt:`${prompt}`,
       temperature: 0.6, // Higher values means the model will take more risks.
       max_tokens: 3650, // The maximum number of tokens to generate in the completion. Most models have a context length of 2048 tokens (except for the newest models, which support 4096).
-     });
+    });
 
     res.status(200).send({
       bot: response.data.choices[0].text
     });
-
+    console.log(prompt)
   } catch (error) {
     console.error(error)
     res.status(500).send(error || 'Something went wrong');
